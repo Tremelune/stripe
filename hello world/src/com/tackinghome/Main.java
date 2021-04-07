@@ -6,9 +6,16 @@ public class Main {
   public static void main(String... args) {
     biz.printStuff();
 
-    int sum = biz.addStuff(5, 7);
-    System.out.println("The sum of 5 and 7 is: " + sum);
+    int a = 5;
+    int b = 7;
+    int sum = biz.addStuff(a, b);
+    printSum(a, b, sum);
 
     System.exit(0);
+  }
+
+  private static void printSum(int a, int b, int sum) {
+    String s = String.format("The sum of %s and %s is: %s", a, b, sum);
+    System.out.println(s);
   }
 }
