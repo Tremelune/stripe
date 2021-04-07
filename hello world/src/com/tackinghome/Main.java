@@ -6,8 +6,8 @@ public class Main {
   public static void main(String... args) {
     biz.printStuff();
 
-    int a = 5;
-    int b = 7;
+    int a = 2;
+    int b = 18;
     int sum = biz.addStuff(a, b);
     printSum(a, b, sum);
 
